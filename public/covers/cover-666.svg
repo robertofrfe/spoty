@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#3d0a14" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#140508" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#070204" />
+    </radialGradient>
+
+    <!-- 666 Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b56" />
+      <stop offset="50%" stop-color="#d91438" />
+      <stop offset="100%" stop-color="#690518" />
+    </linearGradient>
+
+    <!-- Outer Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Film Grain / Texture pattern -->
+    <pattern id="noise" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#000" fill-opacity="0.05" />
+      <circle cx="2" cy="2" r="1" fill="#fff" fill-opacity="0.04" />
+      <circle cx="5" cy="4" r="0.8" fill="#fff" fill-opacity="0.03" />
+    </pattern>
+  </defs>
+
+  <!-- Deep Dark Base -->
+  <rect width="500" height="500" fill="#0a0305" />
+  <rect width="500" height="500" fill="url(#bgGlow)" />
+  <rect width="500" height="500" fill="url(#noise)" />
+
+  <!-- Moody Vignette & Shadows -->
+  <circle cx="250" cy="250" r="180" fill="#ff1a40" opacity="0.12" filter="blur(40px)" />
+
+  <!-- Decorative Corner Crosses / Grunge Marks -->
+  <g stroke="#ff3b56" stroke-width="2" opacity="0.3">
+    <line x1="40" y1="30" x2="40" y2="50" />
+    <line x1="30" y1="40" x2="50" y2="40" />
+
+    <line x1="460" y1="30" x2="460" y2="50" />
+    <line x1="450" y1="40" x2="470" y2="40" />
+
+    <line x1="40" y1="450" x2="40" y2="470" />
+    <line x1="30" y1="460" x2="50" y2="460" />
+
+    <line x1="460" y1="450" x2="460" y2="470" />
+    <line x1="450" y1="460" x2="470" y2="460" />
+  </g>
+
+  <!-- Top Label: SAD TRAP / MÚSICA TRISTE -->
+  <text x="250" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="14" fill="#ff4d6d" letter-spacing="6" opacity="0.8">
+    MÚSICA TRISTE
+  </text>
+  <line x1="180" y1="125" x2="320" y2="125" stroke="#ff3b56" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Giant 666 Typography with Neon Shadow & Gothic Impact -->
+  <!-- Shadow Layer -->
+  <text x="253" y="293" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="150" fill="#000" letter-spacing="4" opacity="0.9" />
+  
+  <!-- Red Glow Layer -->
+  <text x="250" y="290" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="150" fill="url(#textGrad)" letter-spacing="4" filter="url(#neonGlow)">
+    666
+  </text>
+
+  <!-- Highlight overlay on 666 -->
+  <text x="250" y="290" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="150" fill="none" stroke="#ffe5ec" stroke-width="2" letter-spacing="4" opacity="0.3" />
+
+  <!-- Broken Heart / Tear Icon Motif -->
+  <g transform="translate(250, 345) scale(0.9)" opacity="0.85">
+    <path d="M 0 -5 C -15 -25 -40 -15 -40 10 C -40 35 0 60 0 60 C 0 60 40 35 40 10 C 40 -15 15 -25 0 -5 Z" fill="#ff2a4a" />
+    <!-- Crack in Heart -->
+    <path d="M 0 -3 L -5 10 L 6 22 L -4 35 L 2 48 L 0 58" fill="none" stroke="#0a0305" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom Subtitle -->
+  <text x="250" y="445" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#a89a9e" letter-spacing="4" opacity="0.7">
+    SAD BEATS • LONELY NIGHTS
+  </text>
+</svg>

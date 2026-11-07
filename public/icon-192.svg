@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1ed760" />
+      <stop offset="100%" stop-color="#00d2ff" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="45" fill="#000000" />
+  <circle cx="96" cy="96" r="80" fill="#121212" stroke="url(#grad)" stroke-width="6" />
+  <text x="96" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">MM</text>
+  <path d="M66 128 H126" stroke="url(#grad)" stroke-width="6" stroke-linecap="round" />
+</svg>
